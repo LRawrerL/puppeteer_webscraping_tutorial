@@ -14,7 +14,7 @@ const getQuotes = async () => {
 
     const quotes = await page.evaluate(() => {
 
-        tag_string_list = [];
+        let tag_string_list = [];
 
         const quote = document.querySelector(".quote");
         const text = quote.querySelector(".text").innerText;
