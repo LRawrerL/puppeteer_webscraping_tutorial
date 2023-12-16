@@ -26,3 +26,7 @@ All data was scraped from a website that allows scraping [quotesToScrape](http:/
 - `tag_quote.js` - Used to scrape tags, text, and author from first quote
 - `all_quotes_one_page.js` - Used to scrape all quotes from one page
 - `all_tags_quotes_all_pages.js` - Used to scrape all quotes and tags from all pages
+
+#### Things to note when working back:
+- To scape data of author better to get the links of the author then scrape the data from the author page
+- Puppeteer works on context. If previous context is still active although page has changed, it will still scrape the previous page
